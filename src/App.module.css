@@ -1,0 +1,11 @@
+.animate {
+  background-image: url("./assets/anime.png");
+  height: 46px;
+  width: 32px;
+  /* position: absolute; */
+  background-repeat: no-repeat;
+}
+
+.buttonsBlock{
+
+}
