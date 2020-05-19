@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.module.css"],"names":[],"mappings":"AAAA,oBACE,mEAA2C,CAC3C,WAAY,CACZ,UAAW,CAEX,2BACF","file":"main.635dee03.chunk.css","sourcesContent":[".animate {\n  background-image: url(\"./assets/anime.png\");\n  height: 46px;\n  width: 32px;\n  /* position: absolute; */\n  background-repeat: no-repeat;\n}\n\n.buttonsBlock{\n\n}"]}
