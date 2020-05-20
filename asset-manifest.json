@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rn_animation/static/css/main.20b4125f.chunk.css",
+    "main.css": "/rn_animation/static/css/main.b9ca5bc2.chunk.css",
     "main.js": "/rn_animation/static/js/main.4c67a391.chunk.js",
     "main.js.map": "/rn_animation/static/js/main.4c67a391.chunk.js.map",
     "runtime-main.js": "/rn_animation/static/js/runtime-main.cf51d33e.js",
@@ -8,16 +8,16 @@
     "static/js/2.6b83c703.chunk.js": "/rn_animation/static/js/2.6b83c703.chunk.js",
     "static/js/2.6b83c703.chunk.js.map": "/rn_animation/static/js/2.6b83c703.chunk.js.map",
     "index.html": "/rn_animation/index.html",
-    "precache-manifest.f26df85e98b71cc143c1dbdca3a17843.js": "/rn_animation/precache-manifest.f26df85e98b71cc143c1dbdca3a17843.js",
+    "precache-manifest.c58a1cbfd3a2722041aab5d7dcffcb40.js": "/rn_animation/precache-manifest.c58a1cbfd3a2722041aab5d7dcffcb40.js",
     "service-worker.js": "/rn_animation/service-worker.js",
-    "static/css/main.20b4125f.chunk.css.map": "/rn_animation/static/css/main.20b4125f.chunk.css.map",
+    "static/css/main.b9ca5bc2.chunk.css.map": "/rn_animation/static/css/main.b9ca5bc2.chunk.css.map",
     "static/js/2.6b83c703.chunk.js.LICENSE.txt": "/rn_animation/static/js/2.6b83c703.chunk.js.LICENSE.txt",
     "static/media/App.module.css": "/rn_animation/static/media/forest.b8fbdae0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cf51d33e.js",
     "static/js/2.6b83c703.chunk.js",
-    "static/css/main.20b4125f.chunk.css",
+    "static/css/main.b9ca5bc2.chunk.css",
     "static/js/main.4c67a391.chunk.js"
   ]
 }
