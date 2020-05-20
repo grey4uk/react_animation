@@ -8,6 +8,14 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
+background-image: url("./assets/forest.jpg");
+background-position: center;
+background-size: cover;
+padding: 18px;
+}
+
+.heroSelect{
+  margin-bottom: 20px;
 }
 
 .animate {
@@ -15,7 +23,7 @@ align-items: center;
   height: 46px;
   width: 32px;
   background-repeat: no-repeat;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .buttonsBlock{
