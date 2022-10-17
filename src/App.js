@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import css from "./App.module.css";
 
+let animate = document.getElementById("hero");
+
 const App = () => {
   let intervalID = null;
 
-  let animate = document.getElementById("hero");
   const [initX, setInitX] = useState(0);
   const [initY, setInitY] = useState(0);
 
@@ -12,7 +13,7 @@ const App = () => {
     animate = document.getElementById("hero");
     animate.style.backgroundPositionX = initX + "px";
     animate.style.backgroundPositionY = initY + "px";
-  }, [initX,initY])
+  }, [initX, initY]);
 
   const setHero = async (x, y) => {
     await setInitY(y);
@@ -24,27 +25,27 @@ const App = () => {
 
   const handleChooseHero = (e) => {
     clearInterval(intervalID);
-    const key=e.target.value;
+    const key = e.target.value;
     switch (key) {
-      case '1':
+      case "1":
         setHero(0, 0);
         break;
-      case '2':
+      case "2":
         setHero(-96, 0);
         break;
-      case '3':
+      case "3":
         setHero(-192, -192);
         break;
-      case '4':
+      case "4":
         setHero(-290, -192);
         break;
-      case '5':
+      case "5":
         setHero(-96, -192);
         break;
-      case '6':
+      case "6":
         setHero(0, -192);
         break;
-      case '7':
+      case "7":
         setHero(-192, 0);
         break;
       default:
@@ -54,7 +55,6 @@ const App = () => {
 
   const handleFront = (e) => {
     clearInterval(intervalID);
-    animate = document.getElementById("hero");
     intervalID = setInterval(() => {
       animate.style.backgroundPositionX = xx + "px";
       animate.style.backgroundPositionY = yy + "px";
@@ -69,7 +69,6 @@ const App = () => {
 
   const handleBack = (e) => {
     clearInterval(intervalID);
-    animate = document.getElementById("hero");
     intervalID = setInterval(() => {
       animate.style.backgroundPositionX = xx + "px";
       animate.style.backgroundPositionY = yy + "px";
@@ -83,7 +82,6 @@ const App = () => {
 
   const handleLeft = (e) => {
     clearInterval(intervalID);
-    animate = document.getElementById("hero");
     intervalID = setInterval(() => {
       animate.style.backgroundPositionX = xx + "px";
       animate.style.backgroundPositionY = yy + "px";
@@ -97,7 +95,7 @@ const App = () => {
 
   const handleRight = (e) => {
     clearInterval(intervalID);
-    animate = document.getElementById("hero");
+
     intervalID = setInterval(() => {
       animate.style.backgroundPositionX = xx + "px";
       animate.style.backgroundPositionY = yy + "px";
@@ -111,24 +109,33 @@ const App = () => {
 
   return (
     <>
-      <div className={css.container}>
-      <select className={css.heroSelect} name="герой" size="1" value="0" onChange={handleChooseHero}>
-          <option value="0">Виберіть героя</option>
-          <option value="1">Люк</option>
-          <option value="2">Дінь-Дінь</option>
-          <option value="3">Вуйко</option>
-          <option value="4">Мері Поппінс</option>
-          <option value="5">Люсі</option>
-          <option value="6">Мармадюк</option>
-          <option value="7">Сашик</option>
-        </select>
-      <div id="hero" className={css.animate}></div>
-        <div className={css.buttonsBlock}>
-          <button onClick={handleLeft}>Вліво</button>
-          <button onClick={handleBack}>Назад</button>
-          <button onClick={handleFront}>Вперед</button>
-          <button onClick={handleRight}>Вправо</button>
+      <div className={css.wrapper}>
+        <div className={css.container}>
+          <select
+            className={css.heroSelect}
+            name="герой"
+            size="1"
+            value="0"
+            onChange={handleChooseHero}
+          >
+            <option value="0">Виберіть героя</option>
+            <option value="1">Люк</option>
+            <option value="2">Дінь-Дінь</option>
+            <option value="3">Вуйко</option>
+            <option value="4">Мері Поппінс</option>
+            <option value="5">Люсі</option>
+            <option value="6">Мармадюк</option>
+            <option value="7">Сашик</option>
+          </select>
+          <div id="hero" className={css.animate}></div>
+          <div className={css.buttonsBlock}>
+            <button onClick={handleLeft}>Вліво</button>
+            <button onClick={handleBack}>Назад</button>
+            <button onClick={handleFront}>Вперед</button>
+            <button onClick={handleRight}>Вправо</button>
+          </div>
         </div>
+        <div className={css.image}></div>
       </div>
     </>
   );
